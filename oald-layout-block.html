@@ -23,7 +23,7 @@
             width: 200px;
             vertical-align: top;
             background-color: pink;
-         
+         box-sizing: border-box;
         }
         section{
             display: inline-block;
@@ -32,7 +32,7 @@
             width: calc(100% - 606px);
             min-width: 250px;
             overflow: auto;
-         
+         box-sizing: border-box;
         }
         header{
             height: 60px;
@@ -40,13 +40,14 @@
             background-color: bisque;
             padding: 0;
             border: black 2px solid;
+            box-sizing: border-box;
         }
         main{
-            height: calc(100% - 66px);
+            height: calc(100% - 60px);
             border: black 2px solid;
             background-color: #6fde59;
             overflow: auto;
-       
+       box-sizing: border-box;
         }
         aside h1{
             text-align: right;
@@ -57,6 +58,7 @@
             margin-left: 2px;
             height: 25px;
             width: 150px;
+            box-sizing: border-box;
         }
         aside button{
             height: 25px;
@@ -67,6 +69,7 @@
             list-style: none;
             height: calc(100% - 122px);
             overflow-y: scroll;
+            box-sizing: border-box;
         }
        h2{
         margin: 0;
@@ -76,6 +79,7 @@
        }
         aside.second{
         border:black 2px solid;
+        border-left: 0;
        }
     </style>
 </head>
@@ -183,8 +187,9 @@
     <aside class="first">
         <h1>Vocabulary</h1>
     </aside>
-    <aside class="secend">
+    <aside class="second">
         <h1>Vocabulary</h1>
+        
     </aside>
     </div>
 </body>
