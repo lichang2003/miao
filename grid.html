@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgba(0, 0, 0, 0.08);
+            box-shadow: inset 0 0 1px red;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+        ul.menu > li{
+            
+            display:inline-block;
+            
+        }
+        ul.menu li{ 
+            position: relative;
+            padding: 5px 10px;
+        }
+        ul.menu li:hover > ul{
+            display: block;
+        }
+        ul.menu ul{
+            position: absolute;
+            display: none;
+            left: 0;
+            top: 100%;
+            white-space: nowrap;
+        }
+        ul.menu ul ul{
+             left: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>文件<ul>
+            <li>新建文件</li>
+            <li>打开窗口</li>
+            <li>打开文件<ul>
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>ccc</li>
+            </ul></li>
+            <li>打开文件夹</li>
+        </ul></li>
+        <li>编辑</li>
+        <li>选择</li>
+        <li>查看</li>
+    </ul>
+</body>
+</html>
